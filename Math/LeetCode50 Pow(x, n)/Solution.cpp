@@ -5,7 +5,7 @@ private:
             return x;
         if (0 == n)
             return 1;
-        double res = myPow(x, n >> 1);
+        double res = posPow(x, n >> 1);
         res *= res;
         if (n & 0x1 == 1){
             res *= x;
